@@ -6,14 +6,13 @@
 
   <title>Dexterous Crypto (DXT)</title>
 
-  <meta
-    name="description"
-    content="Official website of Dexterous Crypto (DXT), a BEP-20 token on BNB Smart Chain."
-  >
+  <meta name="description"
+        content="Official website of Dexterous Crypto (DXT), a BEP-20 token on BNB Smart Chain.">
 
-  <meta name="theme-color" content="#070707">
+  <meta name="theme-color" content="#050505">
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -35,27 +34,29 @@
       text-decoration: none;
     }
 
+    /* NAV */
+
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
       width: 100%;
-      padding: 16px 7%;
+      padding: 15px 7%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background: rgba(5, 5, 5, 0.96);
-      border-bottom: 1px solid #242424;
+      justify-content: space-between;
+      background: rgba(5,5,5,.96);
+      border-bottom: 1px solid #252525;
       backdrop-filter: blur(10px);
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 11px;
       color: white;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: .5px;
     }
 
     .brand img {
@@ -64,13 +65,13 @@
       object-fit: contain;
     }
 
-    .brand-red {
+    .red {
       color: #ff2020;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 27px;
     }
 
     .nav-links a {
@@ -82,6 +83,8 @@
       color: #ff2020;
     }
 
+    /* HERO */
+
     .hero {
       min-height: 88vh;
       display: flex;
@@ -89,12 +92,13 @@
       justify-content: center;
       text-align: center;
       padding: 80px 20px;
+
       background:
         radial-gradient(
           circle at center,
-          rgba(160, 0, 0, 0.28) 0%,
-          rgba(30, 0, 0, 0.18) 28%,
-          #070707 65%
+          rgba(150,0,0,.28) 0%,
+          rgba(30,0,0,.16) 30%,
+          #050505 70%
         );
     }
 
@@ -107,26 +111,25 @@
       height: 190px;
       object-fit: contain;
       margin-bottom: 25px;
-      filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.25));
+      filter: drop-shadow(0 0 30px rgba(255,0,0,.25));
     }
 
     .hero h1 {
-      font-size: clamp(45px, 8vw, 88px);
+      font-size: clamp(45px,8vw,88px);
       line-height: 1;
       letter-spacing: -3px;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: #ff2020;
+      margin-bottom: 23px;
     }
 
     .hero-subtitle {
-      max-width: 700px;
-      margin: 0 auto 32px;
-      color: #a9a9a9;
+      max-width: 720px;
+      margin: auto;
+      margin-bottom: 32px;
+      color: #aaa;
       font-size: 19px;
     }
+
+    /* BUTTONS */
 
     .buttons {
       display: flex;
@@ -139,34 +142,34 @@
       display: inline-block;
       padding: 14px 25px;
       border-radius: 8px;
-      font-weight: 700;
       font-size: 15px;
-      transition: 0.2s;
-      cursor: pointer;
-      border: none;
+      font-weight: 700;
+      transition: .2s;
     }
 
-    .btn-primary {
+    .primary {
       background: #e71919;
       color: white;
     }
 
-    .btn-primary:hover {
+    .primary:hover {
       background: #ff2929;
       transform: translateY(-2px);
     }
 
-    .btn-secondary {
-      background: #111111;
+    .secondary {
+      background: #111;
       color: white;
       border: 1px solid #444;
     }
 
-    .btn-secondary:hover {
+    .secondary:hover {
       border-color: #ff2020;
       color: #ff2020;
       transform: translateY(-2px);
     }
+
+    /* SECTIONS */
 
     section {
       max-width: 1100px;
@@ -179,10 +182,6 @@
       margin-bottom: 15px;
     }
 
-    .section-title span {
-      color: #ff2020;
-    }
-
     .section-text {
       max-width: 800px;
       color: #a8a8a8;
@@ -190,12 +189,12 @@
       font-size: 17px;
     }
 
+    /* CARDS */
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(230px, 1fr)
-      );
+      grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
       gap: 20px;
     }
 
@@ -204,7 +203,7 @@
       border: 1px solid #252525;
       border-radius: 14px;
       padding: 28px;
-      transition: 0.2s;
+      transition: .2s;
     }
 
     .card:hover {
@@ -213,9 +212,17 @@
     }
 
     .card-icon {
-      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #190606;
+      border: 1px solid #571313;
       color: #ff2020;
-      margin-bottom: 12px;
+      border-radius: 50%;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
 
     .card h3 {
@@ -227,6 +234,8 @@
       color: #999;
       font-size: 15px;
     }
+
+    /* TOKEN */
 
     .token-box {
       background: #0d0d0d;
@@ -256,17 +265,17 @@
       font-weight: 600;
     }
 
-    .contract-value {
+    .contract {
       color: #ff3b3b;
       font-family: monospace;
       word-break: break-all;
-      max-width: 650px;
+      max-width: 680px;
     }
 
     .copy-button {
-      margin-left: 10px;
+      margin-top: 10px;
       padding: 7px 12px;
-      background: #1b1b1b;
+      background: #191919;
       color: white;
       border: 1px solid #444;
       border-radius: 6px;
@@ -277,13 +286,16 @@
       border-color: #ff2020;
     }
 
+    /* PROJECT */
+
     .project-box {
       background:
         linear-gradient(
           135deg,
-          rgba(130, 0, 0, 0.18),
-          rgba(20, 20, 20, 0.7)
+          rgba(130,0,0,.18),
+          rgba(20,20,20,.7)
         );
+
       border: 1px solid #342020;
       border-radius: 16px;
       padding: 35px;
@@ -293,6 +305,8 @@
       color: #aaa;
       margin-bottom: 15px;
     }
+
+    /* NOTICE */
 
     .notice {
       border-left: 4px solid #e71919;
@@ -305,6 +319,8 @@
     .notice strong {
       color: white;
     }
+
+    /* FOOTER */
 
     footer {
       border-top: 1px solid #222;
@@ -330,7 +346,10 @@
       color: #ff3030;
     }
 
-    @media (max-width: 700px) {
+    /* MOBILE */
+
+    @media (max-width:700px) {
+
       nav {
         padding: 14px 20px;
       }
@@ -373,44 +392,46 @@
         text-align: left;
       }
 
-      .contract-value {
+      .contract {
         max-width: 100%;
       }
 
-      .copy-button {
-        margin: 10px 0 0;
-      }
     }
+
   </style>
 </head>
 
+
 <body>
+
+<!-- NAVIGATION -->
 
 <nav>
 
   <a href="#top" class="brand">
 
-    <img
-      src="dxt-logo.png"
-      alt="DXT Logo"
-    >
+    <img src="dxt-logo.png" alt="DXT Logo">
 
     <span>
       DEXTEROUS
-      <span class="brand-red">CRYPTO</span>
+      <span class="red">CRYPTO</span>
     </span>
 
   </a>
 
   <div class="nav-links">
+
     <a href="#about">About</a>
     <a href="#token">Token</a>
-    <a href="#project">Project</a>
+    <a href="#how-to-buy">How to Buy</a>
     <a href="#contact">Contact</a>
+
   </div>
 
 </nav>
 
+
+<!-- HERO -->
 
 <header class="hero" id="top">
 
@@ -423,7 +444,7 @@
     >
 
     <h1>
-      DEXTEROUS <span>CRYPTO</span>
+      DEXTEROUS <span class="red">CRYPTO</span>
     </h1>
 
     <p class="hero-subtitle">
@@ -433,10 +454,8 @@
 
     <div class="buttons">
 
-      <!-- PancakeSwap DXT -->
-
       <a
-        class="btn btn-primary"
+        class="btn primary"
         href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
         target="_blank"
         rel="noopener noreferrer"
@@ -444,10 +463,8 @@
         Trade DXT
       </a>
 
-      <!-- BscScan -->
-
       <a
-        class="btn btn-secondary"
+        class="btn secondary"
         href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
         target="_blank"
         rel="noopener noreferrer"
@@ -462,10 +479,12 @@
 </header>
 
 
+<!-- ABOUT -->
+
 <section id="about">
 
   <h2 class="section-title">
-    About <span>DXT</span>
+    About <span class="red">DXT</span>
   </h2>
 
   <p class="section-text">
@@ -478,30 +497,44 @@
   <div class="cards">
 
     <div class="card">
+
       <div class="card-icon">◆</div>
+
       <h3>BNB Smart Chain</h3>
+
       <p>
         DXT is deployed as a BEP-20 token on
         BNB Smart Chain.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="card-icon">◈</div>
+
       <h3>10M Supply</h3>
+
       <p>
         The stated total supply is
         10,000,000 DXT.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="card-icon">↔</div>
+
       <h3>DEX Trading</h3>
+
       <p>
-        DXT has liquidity available through
-        PancakeSwap.
+        DXT can be accessed through
+        decentralized exchange infrastructure.
       </p>
+
     </div>
 
   </div>
@@ -509,15 +542,17 @@
 </section>
 
 
+<!-- TOKEN INFORMATION -->
+
 <section id="token">
 
   <h2 class="section-title">
-    Token <span>Information</span>
+    Token <span class="red">Information</span>
   </h2>
 
   <p class="section-text">
-    Always verify the contract address before interacting
-    with DXT.
+    Always verify the official contract address before
+    interacting with DXT.
   </p>
 
   <div class="token-box">
@@ -558,7 +593,7 @@
         Contract Address
       </span>
 
-      <span class="token-value contract-value">
+      <span class="token-value contract">
 
         0x075205868FA68F2308Ca86F6E7eE0A6a56442686
 
@@ -580,10 +615,123 @@
 </section>
 
 
+<!-- HOW TO BUY -->
+
+<section id="how-to-buy">
+
+  <h2 class="section-title">
+    How to <span class="red">Buy DXT</span>
+  </h2>
+
+  <p class="section-text">
+    DXT can be accessed through decentralized trading.
+    Always verify the official contract address before
+    making a transaction.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="card-icon">1</div>
+
+      <h3>Connect Wallet</h3>
+
+      <p>
+        Connect a compatible wallet such as MetaMask
+        to BNB Smart Chain.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">2</div>
+
+      <h3>Open PancakeSwap</h3>
+
+      <p>
+        Use the official Trade DXT button to open
+        PancakeSwap.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">3</div>
+
+      <h3>Select DXT</h3>
+
+      <p>
+        Select DXT using the official contract address
+        shown on this website.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-icon">4</div>
+
+      <h3>Review & Swap</h3>
+
+      <p>
+        Review the token, amount, price impact,
+        fees and transaction details before confirming.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="project-box" style="margin-top:30px;">
+
+    <p>
+      <strong>Official DXT Contract</strong>
+    </p>
+
+    <p class="contract">
+      0x075205868FA68F2308Ca86F6E7eE0A6a56442686
+    </p>
+
+    <div class="buttons" style="margin-top:25px;">
+
+      <a
+        class="btn primary"
+        href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Trade DXT
+      </a>
+
+      <a
+        class="btn secondary"
+        href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Verify Contract
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECT -->
+
 <section id="project">
 
   <h2 class="section-title">
-    Dexterous <span>Crypto</span>
+    Dexterous <span class="red">Crypto</span>
   </h2>
 
   <div class="project-box">
@@ -601,7 +749,7 @@
     <div class="buttons">
 
       <a
-        class="btn btn-primary"
+        class="btn primary"
         href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
         target="_blank"
         rel="noopener noreferrer"
@@ -610,7 +758,7 @@
       </a>
 
       <a
-        class="btn btn-secondary"
+        class="btn secondary"
         href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
         target="_blank"
         rel="noopener noreferrer"
@@ -625,10 +773,12 @@
 </section>
 
 
+<!-- CONTACT -->
+
 <section id="contact">
 
   <h2 class="section-title">
-    Official <span>Contact</span>
+    Official <span class="red">Contact</span>
   </h2>
 
   <p class="section-text">
@@ -639,13 +789,16 @@
   <div class="project-box">
 
     <p>
+
       <strong>Email:</strong>
+
       <a
         href="mailto:contact@dexterouscrypto.com"
         style="color:#ff3030;"
       >
         contact@dexterouscrypto.com
       </a>
+
     </p>
 
     <p>
@@ -657,6 +810,8 @@
 
 </section>
 
+
+<!-- RISK NOTICE -->
 
 <section>
 
@@ -675,6 +830,8 @@
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -716,6 +873,7 @@ function copyContract() {
     "0x075205868FA68F2308Ca86F6E7eE0A6a56442686";
 
   navigator.clipboard.writeText(address)
+
     .then(function () {
 
       const button =
@@ -724,10 +882,13 @@ function copyContract() {
       button.textContent = "Copied!";
 
       setTimeout(function () {
+
         button.textContent = "Copy Contract";
+
       }, 2000);
 
     })
+
     .catch(function () {
 
       alert(
@@ -739,6 +900,7 @@ function copyContract() {
 }
 
 </script>
+
 
 </body>
 </html>
