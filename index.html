@@ -7,8 +7,10 @@
 
   <title>Dexterous Crypto (DXT)</title>
 
-  <meta name="description"
-        content="Official website of Dexterous Crypto (DXT), a BEP-20 token on BNB Smart Chain.">
+  <meta
+    name="description"
+    content="Official website of Dexterous Crypto (DXT), a BEP-20 token on BNB Smart Chain."
+  >
 
   <meta name="theme-color" content="#050505">
 
@@ -34,7 +36,7 @@
       text-decoration: none;
     }
 
-    /* NAV */
+    /* NAVIGATION */
 
     nav {
       position: sticky;
@@ -45,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgba(5,5,5,.96);
+      background: rgba(5, 5, 5, 0.96);
       border-bottom: 1px solid #252525;
       backdrop-filter: blur(10px);
     }
@@ -56,7 +58,7 @@
       gap: 11px;
       color: white;
       font-weight: 800;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
     }
 
     .brand img {
@@ -72,6 +74,7 @@
     .nav-links {
       display: flex;
       gap: 27px;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
@@ -95,8 +98,8 @@
       background:
         radial-gradient(
           circle at center,
-          rgba(150,0,0,.28) 0%,
-          rgba(30,0,0,.16) 30%,
+          rgba(150, 0, 0, 0.28) 0%,
+          rgba(30, 0, 0, 0.16) 30%,
           #050505 70%
         );
     }
@@ -110,11 +113,11 @@
       height: 190px;
       object-fit: contain;
       margin-bottom: 25px;
-      filter: drop-shadow(0 0 30px rgba(255,0,0,.25));
+      filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.25));
     }
 
     .hero h1 {
-      font-size: clamp(45px,8vw,88px);
+      font-size: clamp(45px, 8vw, 88px);
       line-height: 1;
       letter-spacing: -3px;
       margin-bottom: 23px;
@@ -122,8 +125,7 @@
 
     .hero-subtitle {
       max-width: 720px;
-      margin: auto;
-      margin-bottom: 32px;
+      margin: 0 auto 32px;
       color: #aaa;
       font-size: 19px;
     }
@@ -143,7 +145,8 @@
       border-radius: 8px;
       font-size: 15px;
       font-weight: 700;
-      transition: .2s;
+      transition: 0.2s;
+      text-align: center;
     }
 
     .primary {
@@ -174,6 +177,7 @@
       max-width: 1100px;
       margin: auto;
       padding: 90px 25px;
+      scroll-margin-top: 80px;
     }
 
     .section-title {
@@ -192,8 +196,7 @@
 
     .cards {
       display: grid;
-      grid-template-columns:
-        repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
@@ -202,7 +205,7 @@
       border: 1px solid #252525;
       border-radius: 14px;
       padding: 28px;
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .card:hover {
@@ -234,7 +237,7 @@
       font-size: 15px;
     }
 
-    /* TOKEN */
+    /* TOKEN INFORMATION */
 
     .token-box {
       background: #0d0d0d;
@@ -285,14 +288,14 @@
       border-color: #ff2020;
     }
 
-    /* PROJECT */
+    /* PROJECT AND CONTACT BOXES */
 
     .project-box {
       background:
         linear-gradient(
           135deg,
-          rgba(130,0,0,.18),
-          rgba(20,20,20,.7)
+          rgba(130, 0, 0, 0.18),
+          rgba(20, 20, 20, 0.7)
         );
       border: 1px solid #342020;
       border-radius: 16px;
@@ -304,12 +307,42 @@
       margin-bottom: 15px;
     }
 
+    .project-box p:last-child {
+      margin-bottom: 0;
+    }
+
     .project-box a:not(.btn) {
       color: #ff3030;
       overflow-wrap: anywhere;
     }
 
-    /* NOTICE */
+    /* WHITEPAPER */
+
+    .whitepaper-box {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(130, 0, 0, 0.18),
+          rgba(20, 20, 20, 0.7)
+        );
+      border: 1px solid #342020;
+      border-radius: 16px;
+      padding: 45px 30px;
+      text-align: center;
+    }
+
+    .whitepaper-box h2 {
+      margin-bottom: 15px;
+    }
+
+    .whitepaper-box p {
+      max-width: 720px;
+      margin: 0 auto 30px;
+      color: #aaa;
+      font-size: 17px;
+    }
+
+    /* RISK NOTICE */
 
     .notice {
       border-left: 4px solid #e71919;
@@ -351,7 +384,7 @@
 
     /* MOBILE */
 
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       nav {
         padding: 14px 20px;
       }
@@ -397,434 +430,519 @@
       .contract {
         max-width: 100%;
       }
+
+      .project-box,
+      .whitepaper-box {
+        padding: 25px 20px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+  <!-- NAVIGATION -->
 
-<nav>
-  <a href="#top" class="brand">
-    <img src="dxt-logo.png" alt="DXT Logo">
-    <span>
-      DEXTEROUS
-      <span class="red">CRYPTO</span>
-    </span>
-  </a>
+  <nav>
+    <a href="#top" class="brand">
+      <img src="dxt-logo.png" alt="DXT Logo">
+      <span>
+        DEXTEROUS
+        <span class="red">CRYPTO</span>
+      </span>
+    </a>
 
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#token">Token</a>
-    <a href="#how-to-buy">How to Buy</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#token">Token</a>
+      <a href="#how-to-buy">How to Buy</a>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
+  <!-- HERO -->
 
-<header class="hero" id="top">
-  <div class="hero-content">
+  <header class="hero" id="top">
+    <div class="hero-content">
+
+      <img
+        src="dxt-logo.png"
+        alt="Dexterous Crypto DXT Logo"
+        class="hero-logo"
+      >
+
+      <h1>
+        DEXTEROUS <span class="red">CRYPTO</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        DXT is a BEP-20 digital token deployed on
+        BNB Smart Chain.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn primary"
+          href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Trade DXT
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on BscScan
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/jaskaransidhu972-code/dexterouscrypto/blob/main/whitepaper.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read Whitepaper
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About <span class="red">DXT</span>
+    </h2>
+
+    <p class="section-text">
+      Dexterous Crypto (DXT) is a digital token deployed
+      on BNB Smart Chain. The project provides a publicly
+      verifiable token contract and decentralized-exchange
+      liquidity through PancakeSwap.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">◆</div>
+        <h3>BNB Smart Chain</h3>
+        <p>
+          DXT is deployed as a BEP-20 token on
+          BNB Smart Chain.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">◈</div>
+        <h3>10M Supply</h3>
+        <p>
+          The stated total supply is
+          10,000,000 DXT.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">↔</div>
+        <h3>DEX Trading</h3>
+        <p>
+          DXT can be accessed through
+          decentralized exchange infrastructure.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOKEN INFORMATION -->
+
+  <section id="token">
+
+    <h2 class="section-title">
+      Token <span class="red">Information</span>
+    </h2>
+
+    <p class="section-text">
+      Always verify the official contract address before
+      interacting with DXT.
+    </p>
+
+    <div class="token-box">
+
+      <div class="token-row">
+        <span class="token-label">Name</span>
+        <span class="token-value">Dexterous Crypto</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Symbol</span>
+        <span class="token-value">DXT</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Network</span>
+        <span class="token-value">BNB Smart Chain</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Standard</span>
+        <span class="token-value">BEP-20</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Total Supply</span>
+        <span class="token-value">10,000,000 DXT</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Decimals</span>
+        <span class="token-value">18</span>
+      </div>
+
+      <div class="token-row">
+        <span class="token-label">Contract Address</span>
+
+        <span class="token-value contract">
+          0x075205868FA68F2308Ca86F6E7eE0A6a56442686
+
+          <br>
+
+          <button
+            class="copy-button"
+            type="button"
+            onclick="copyContract()"
+          >
+            Copy Contract
+          </button>
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO BUY -->
+
+  <section id="how-to-buy">
+
+    <h2 class="section-title">
+      How to <span class="red">Buy DXT</span>
+    </h2>
+
+    <p class="section-text">
+      DXT can be accessed through decentralized trading.
+      Always verify the official contract address before
+      making a transaction.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">1</div>
+        <h3>Connect Wallet</h3>
+        <p>
+          Connect a compatible wallet such as MetaMask
+          to BNB Smart Chain.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">2</div>
+        <h3>Open PancakeSwap</h3>
+        <p>
+          Use the official Trade DXT button to open
+          PancakeSwap.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">3</div>
+        <h3>Select DXT</h3>
+        <p>
+          Select DXT using the official contract address
+          shown on this website.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">4</div>
+        <h3>Review &amp; Swap</h3>
+        <p>
+          Review the token, amount, price impact,
+          fees and transaction details before confirming.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="project-box" style="margin-top:30px;">
+
+      <p>
+        <strong>Official DXT Contract</strong>
+      </p>
+
+      <p class="contract">
+        0x075205868FA68F2308Ca86F6E7eE0A6a56442686
+      </p>
+
+      <div class="buttons" style="margin-top:25px;">
+
+        <a
+          class="btn primary"
+          href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Trade DXT
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Verify Contract
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+
+  <section id="project">
+
+    <h2 class="section-title">
+      Dexterous <span class="red">Crypto</span>
+    </h2>
+
+    <div class="project-box">
+
+      <p>
+        DXT is intended to provide a straightforward,
+        publicly verifiable digital-token experience.
+      </p>
+
+      <p>
+        Users can verify the token contract on BscScan
+        and access decentralized trading through PancakeSwap.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn primary"
+          href="https://pancakeswap.finance/swap?chain=bsc&amp;inputCurrency=BNB&amp;outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Buy / Trade DXT
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Verify Contract
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITEPAPER -->
+
+  <section id="whitepaper">
+
+    <div class="whitepaper-box">
+
+      <h2 class="section-title">
+        DXT <span class="red">Whitepaper</span>
+      </h2>
+
+      <p>
+        Read the Dexterous Crypto whitepaper to learn about
+        DXT's token information, current functionality,
+        liquidity, potential development, and associated risks.
+      </p>
+
+      <a
+        class="btn primary"
+        href="https://github.com/jaskaransidhu972-code/dexterouscrypto/blob/main/whitepaper.md"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read DXT Whitepaper
+      </a>
+
+    </div>
+  </section>
+
+  <!-- OFFICIAL CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="section-title">
+      Official <span class="red">Contact</span>
+    </h2>
+
+    <p class="section-text">
+      For project-related inquiries, contact the official
+      Dexterous Crypto email address.
+    </p>
+
+    <div class="project-box">
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:contact@dexterouscrypto.com">
+          contact@dexterouscrypto.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Website:</strong>
+        <a
+          href="https://dexterouscrypto.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          dexterouscrypto.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Official X:</strong>
+        <a
+          href="https://x.com/OfficialDXT"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @OfficialDXT
+        </a>
+      </p>
+
+      <p>
+        <strong>Whitepaper:</strong>
+        <a
+          href="https://github.com/jaskaransidhu972-code/dexterouscrypto/blob/main/whitepaper.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DXT Whitepaper v0.1
+        </a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- RISK NOTICE -->
+
+  <section>
+
+    <div class="notice">
+
+      <strong>Important Risk Notice</strong>
+
+      <br><br>
+
+      Digital assets involve risk. DXT does not guarantee
+      profits, returns, future value, or investment performance.
+
+      The DXT/WBNB liquidity pool may have limited liquidity,
+      and even small transactions may cause substantial price
+      impact or slippage.
+
+      Always verify the official contract address and review
+      transaction details before interacting with DXT.
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
 
     <img
       src="dxt-logo.png"
-      alt="Dexterous Crypto DXT Logo"
-      class="hero-logo"
+      alt="DXT Logo"
     >
 
-    <h1>
-      DEXTEROUS <span class="red">CRYPTO</span>
-    </h1>
-
-    <p class="hero-subtitle">
-      DXT is a BEP-20 digital token deployed on
-      BNB Smart Chain.
+    <p>
+      © 2026 Dexterous Crypto (DXT)
     </p>
 
-    <div class="buttons">
+    <p>
 
       <a
-        class="btn primary"
-        href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Trade DXT
-      </a>
-
-      <a
-        class="btn secondary"
         href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
         target="_blank"
         rel="noopener noreferrer"
       >
-        View on BscScan
+        BscScan
       </a>
 
-    </div>
-  </div>
-</header>
+      &nbsp; • &nbsp;
 
-<!-- ABOUT -->
-
-<section id="about">
-  <h2 class="section-title">
-    About <span class="red">DXT</span>
-  </h2>
-
-  <p class="section-text">
-    Dexterous Crypto (DXT) is a digital token deployed
-    on BNB Smart Chain. The project provides a publicly
-    verifiable token contract and decentralized-exchange
-    liquidity through PancakeSwap.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="card-icon">◆</div>
-      <h3>BNB Smart Chain</h3>
-      <p>
-        DXT is deployed as a BEP-20 token on
-        BNB Smart Chain.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">◈</div>
-      <h3>10M Supply</h3>
-      <p>
-        The stated total supply is
-        10,000,000 DXT.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">↔</div>
-      <h3>DEX Trading</h3>
-      <p>
-        DXT can be accessed through
-        decentralized exchange infrastructure.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- TOKEN INFORMATION -->
-
-<section id="token">
-  <h2 class="section-title">
-    Token <span class="red">Information</span>
-  </h2>
-
-  <p class="section-text">
-    Always verify the official contract address before
-    interacting with DXT.
-  </p>
-
-  <div class="token-box">
-
-    <div class="token-row">
-      <span class="token-label">Name</span>
-      <span class="token-value">Dexterous Crypto</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Symbol</span>
-      <span class="token-value">DXT</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Network</span>
-      <span class="token-value">BNB Smart Chain</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Standard</span>
-      <span class="token-value">BEP-20</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Total Supply</span>
-      <span class="token-value">10,000,000 DXT</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Decimals</span>
-      <span class="token-value">18</span>
-    </div>
-
-    <div class="token-row">
-      <span class="token-label">Contract Address</span>
-
-      <span class="token-value contract">
-        0x075205868FA68F2308Ca86F6E7eE0A6a56442686
-
-        <br>
-
-        <button
-          class="copy-button"
-          onclick="copyContract()"
-        >
-          Copy Contract
-        </button>
-      </span>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW TO BUY -->
-
-<section id="how-to-buy">
-  <h2 class="section-title">
-    How to <span class="red">Buy DXT</span>
-  </h2>
-
-  <p class="section-text">
-    DXT can be accessed through decentralized trading.
-    Always verify the official contract address before
-    making a transaction.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="card-icon">1</div>
-      <h3>Connect Wallet</h3>
-      <p>
-        Connect a compatible wallet such as MetaMask
-        to BNB Smart Chain.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">2</div>
-      <h3>Open PancakeSwap</h3>
-      <p>
-        Use the official Trade DXT button to open
-        PancakeSwap.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">3</div>
-      <h3>Select DXT</h3>
-      <p>
-        Select DXT using the official contract address
-        shown on this website.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">4</div>
-      <h3>Review &amp; Swap</h3>
-      <p>
-        Review the token, amount, price impact,
-        fees and transaction details before confirming.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="project-box" style="margin-top:30px;">
-    <p>
-      <strong>Official DXT Contract</strong>
-    </p>
-
-    <p class="contract">
-      0x075205868FA68F2308Ca86F6E7eE0A6a56442686
-    </p>
-
-    <div class="buttons" style="margin-top:25px;">
-
-      <a
-        class="btn primary"
-        href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Trade DXT
-      </a>
-
-      <a
-        class="btn secondary"
-        href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Verify Contract
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROJECT -->
-
-<section id="project">
-  <h2 class="section-title">
-    Dexterous <span class="red">Crypto</span>
-  </h2>
-
-  <div class="project-box">
-    <p>
-      DXT is intended to provide a straightforward,
-      publicly verifiable digital-token experience.
-    </p>
-
-    <p>
-      Users can verify the token contract on BscScan
-      and access decentralized trading through PancakeSwap.
-    </p>
-
-    <div class="buttons">
-
-      <a
-        class="btn primary"
-        href="https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Buy / Trade DXT
-      </a>
-
-      <a
-        class="btn secondary"
-        href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Verify Contract
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-  <h2 class="section-title">
-    Official <span class="red">Contact</span>
-  </h2>
-
-  <p class="section-text">
-    For project-related inquiries, contact the official
-    Dexterous Crypto email address.
-  </p>
-
-  <div class="project-box">
-
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:contact@dexterouscrypto.com">
-        contact@dexterouscrypto.com
-      </a>
-    </p>
-
-    <p>
-      <strong>Website:</strong>
-      <a
-        href="https://dexterouscrypto.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        dexterouscrypto.com
-      </a>
-    </p>
-
-    <p>
-      <strong>Official X:</strong>
       <a
         href="https://x.com/OfficialDXT"
         target="_blank"
         rel="noopener noreferrer"
       >
-        @OfficialDXT
+        X / Twitter
       </a>
+
+      &nbsp; • &nbsp;
+
+      <a
+        href="https://github.com/jaskaransidhu972-code/dexterouscrypto/blob/main/whitepaper.md"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Whitepaper
+      </a>
+
+      &nbsp; • &nbsp;
+
+      <a href="mailto:contact@dexterouscrypto.com">
+        Contact
+      </a>
+
     </p>
+  </footer>
 
-  </div>
-</section>
+  <!-- COPY CONTRACT FUNCTION -->
 
-<!-- RISK NOTICE -->
+  <script>
+    function copyContract() {
+      const address =
+        "0x075205868FA68F2308Ca86F6E7eE0A6a56442686";
 
-<section>
-  <div class="notice">
-    <strong>Important Risk Notice</strong>
+      navigator.clipboard.writeText(address)
+        .then(function () {
+          const button =
+            document.querySelector(".copy-button");
 
-    <br><br>
+          button.textContent = "Copied!";
 
-    Digital assets involve risk. DXT does not guarantee
-    profits, returns, future value, or investment performance.
-    Always verify the official contract address before
-    interacting with DXT.
-  </div>
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-  <img
-    src="dxt-logo.png"
-    alt="DXT Logo"
-  >
-
-  <p>
-    © 2026 Dexterous Crypto (DXT)
-  </p>
-
-  <p>
-    <a
-      href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      BscScan
-    </a>
-
-    &nbsp; • &nbsp;
-
-    <a
-      href="https://x.com/OfficialDXT"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      X / Twitter
-    </a>
-
-    &nbsp; • &nbsp;
-
-    <a href="mailto:contact@dexterouscrypto.com">
-      Contact
-    </a>
-  </p>
-</footer>
-
-<script>
-  function copyContract() {
-    const address =
-      "0x075205868FA68F2308Ca86F6E7eE0A6a56442686";
-
-    navigator.clipboard.writeText(address)
-      .then(function () {
-        const button =
-          document.querySelector(".copy-button");
-
-        button.textContent = "Copied!";
-
-        setTimeout(function () {
-          button.textContent = "Copy Contract";
-        }, 2000);
-      })
-      .catch(function () {
-        alert("Contract address: " + address);
-      });
-  }
-</script>
+          setTimeout(function () {
+            button.textContent = "Copy Contract";
+          }, 2000);
+        })
+        .catch(function () {
+          alert("Contract address: " + address);
+        });
+    }
+  </script>
 
 </body>
 </html>
