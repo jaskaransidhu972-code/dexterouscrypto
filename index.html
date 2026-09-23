@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,6 @@
   <meta name="theme-color" content="#050505">
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -92,7 +92,6 @@
       justify-content: center;
       text-align: center;
       padding: 80px 20px;
-
       background:
         radial-gradient(
           circle at center,
@@ -295,7 +294,6 @@
           rgba(130,0,0,.18),
           rgba(20,20,20,.7)
         );
-
       border: 1px solid #342020;
       border-radius: 16px;
       padding: 35px;
@@ -304,6 +302,11 @@
     .project-box p {
       color: #aaa;
       margin-bottom: 15px;
+    }
+
+    .project-box a:not(.btn) {
+      color: #ff3030;
+      overflow-wrap: anywhere;
     }
 
     /* NOTICE */
@@ -349,7 +352,6 @@
     /* MOBILE */
 
     @media (max-width:700px) {
-
       nav {
         padding: 14px 20px;
       }
@@ -395,46 +397,34 @@
       .contract {
         max-width: 100%;
       }
-
     }
-
   </style>
 </head>
-
 
 <body>
 
 <!-- NAVIGATION -->
 
 <nav>
-
   <a href="#top" class="brand">
-
     <img src="dxt-logo.png" alt="DXT Logo">
-
     <span>
       DEXTEROUS
       <span class="red">CRYPTO</span>
     </span>
-
   </a>
 
   <div class="nav-links">
-
     <a href="#about">About</a>
     <a href="#token">Token</a>
     <a href="#how-to-buy">How to Buy</a>
     <a href="#contact">Contact</a>
-
   </div>
-
 </nav>
-
 
 <!-- HERO -->
 
 <header class="hero" id="top">
-
   <div class="hero-content">
 
     <img
@@ -473,16 +463,12 @@
       </a>
 
     </div>
-
   </div>
-
 </header>
-
 
 <!-- ABOUT -->
 
 <section id="about">
-
   <h2 class="section-title">
     About <span class="red">DXT</span>
   </h2>
@@ -497,55 +483,38 @@
   <div class="cards">
 
     <div class="card">
-
       <div class="card-icon">◆</div>
-
       <h3>BNB Smart Chain</h3>
-
       <p>
         DXT is deployed as a BEP-20 token on
         BNB Smart Chain.
       </p>
-
     </div>
 
-
     <div class="card">
-
       <div class="card-icon">◈</div>
-
       <h3>10M Supply</h3>
-
       <p>
         The stated total supply is
         10,000,000 DXT.
       </p>
-
     </div>
 
-
     <div class="card">
-
       <div class="card-icon">↔</div>
-
       <h3>DEX Trading</h3>
-
       <p>
         DXT can be accessed through
         decentralized exchange infrastructure.
       </p>
-
     </div>
 
   </div>
-
 </section>
-
 
 <!-- TOKEN INFORMATION -->
 
 <section id="token">
-
   <h2 class="section-title">
     Token <span class="red">Information</span>
   </h2>
@@ -588,13 +557,9 @@
     </div>
 
     <div class="token-row">
-
-      <span class="token-label">
-        Contract Address
-      </span>
+      <span class="token-label">Contract Address</span>
 
       <span class="token-value contract">
-
         0x075205868FA68F2308Ca86F6E7eE0A6a56442686
 
         <br>
@@ -605,20 +570,15 @@
         >
           Copy Contract
         </button>
-
       </span>
-
     </div>
 
   </div>
-
 </section>
-
 
 <!-- HOW TO BUY -->
 
 <section id="how-to-buy">
-
   <h2 class="section-title">
     How to <span class="red">Buy DXT</span>
   </h2>
@@ -632,65 +592,44 @@
   <div class="cards">
 
     <div class="card">
-
       <div class="card-icon">1</div>
-
       <h3>Connect Wallet</h3>
-
       <p>
         Connect a compatible wallet such as MetaMask
         to BNB Smart Chain.
       </p>
-
     </div>
 
-
     <div class="card">
-
       <div class="card-icon">2</div>
-
       <h3>Open PancakeSwap</h3>
-
       <p>
         Use the official Trade DXT button to open
         PancakeSwap.
       </p>
-
     </div>
 
-
     <div class="card">
-
       <div class="card-icon">3</div>
-
       <h3>Select DXT</h3>
-
       <p>
         Select DXT using the official contract address
         shown on this website.
       </p>
-
     </div>
 
-
     <div class="card">
-
       <div class="card-icon">4</div>
-
-      <h3>Review & Swap</h3>
-
+      <h3>Review &amp; Swap</h3>
       <p>
         Review the token, amount, price impact,
         fees and transaction details before confirming.
       </p>
-
     </div>
 
   </div>
 
-
   <div class="project-box" style="margin-top:30px;">
-
     <p>
       <strong>Official DXT Contract</strong>
     </p>
@@ -720,22 +659,17 @@
       </a>
 
     </div>
-
   </div>
-
 </section>
-
 
 <!-- PROJECT -->
 
 <section id="project">
-
   <h2 class="section-title">
     Dexterous <span class="red">Crypto</span>
   </h2>
 
   <div class="project-box">
-
     <p>
       DXT is intended to provide a straightforward,
       publicly verifiable digital-token experience.
@@ -767,16 +701,12 @@
       </a>
 
     </div>
-
   </div>
-
 </section>
-
 
 <!-- CONTACT -->
 
 <section id="contact">
-
   <h2 class="section-title">
     Official <span class="red">Contact</span>
   </h2>
@@ -789,34 +719,41 @@
   <div class="project-box">
 
     <p>
-
       <strong>Email:</strong>
-
-      <a
-        href="mailto:contact@dexterouscrypto.com"
-        style="color:#ff3030;"
-      >
+      <a href="mailto:contact@dexterouscrypto.com">
         contact@dexterouscrypto.com
       </a>
-
     </p>
 
     <p>
       <strong>Website:</strong>
-      dexterouscrypto.com
+      <a
+        href="https://dexterouscrypto.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dexterouscrypto.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Official X:</strong>
+      <a
+        href="https://x.com/OfficialDXT"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @OfficialDXT
+      </a>
     </p>
 
   </div>
-
 </section>
-
 
 <!-- RISK NOTICE -->
 
 <section>
-
   <div class="notice">
-
     <strong>Important Risk Notice</strong>
 
     <br><br>
@@ -825,16 +762,12 @@
     profits, returns, future value, or investment performance.
     Always verify the official contract address before
     interacting with DXT.
-
   </div>
-
 </section>
-
 
 <!-- FOOTER -->
 
 <footer>
-
   <img
     src="dxt-logo.png"
     alt="DXT Logo"
@@ -845,7 +778,6 @@
   </p>
 
   <p>
-
     <a
       href="https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686"
       target="_blank"
@@ -856,51 +788,43 @@
 
     &nbsp; • &nbsp;
 
+    <a
+      href="https://x.com/OfficialDXT"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      X / Twitter
+    </a>
+
+    &nbsp; • &nbsp;
+
     <a href="mailto:contact@dexterouscrypto.com">
       Contact
     </a>
-
   </p>
-
 </footer>
 
-
 <script>
+  function copyContract() {
+    const address =
+      "0x075205868FA68F2308Ca86F6E7eE0A6a56442686";
 
-function copyContract() {
+    navigator.clipboard.writeText(address)
+      .then(function () {
+        const button =
+          document.querySelector(".copy-button");
 
-  const address =
-    "0x075205868FA68F2308Ca86F6E7eE0A6a56442686";
+        button.textContent = "Copied!";
 
-  navigator.clipboard.writeText(address)
-
-    .then(function () {
-
-      const button =
-        document.querySelector(".copy-button");
-
-      button.textContent = "Copied!";
-
-      setTimeout(function () {
-
-        button.textContent = "Copy Contract";
-
-      }, 2000);
-
-    })
-
-    .catch(function () {
-
-      alert(
-        "Contract address: " + address
-      );
-
-    });
-
-}
-
+        setTimeout(function () {
+          button.textContent = "Copy Contract";
+        }, 2000);
+      })
+      .catch(function () {
+        alert("Contract address: " + address);
+      });
+  }
 </script>
-
 
 </body>
 </html>
