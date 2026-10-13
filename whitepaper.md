@@ -1,12 +1,18 @@
 
 # Dexterous Crypto (DXT)
-## Project Whitepaper — Version 0.1
+## Project Whitepaper — Version 0.2
 
-September 2026
+October 2026
 
-Website: https://dexterouscrypto.com  
-Official X: https://x.com/OfficialDXT  
-Contact: contact@dexterouscrypto.com
+**Official Website:** https://dexterouscrypto.com
+
+**Official X:** https://x.com/OfficialDXT
+
+**Contact:** contact@dexterouscrypto.com
+
+**Founder & CEO:** Jaskaran Singh
+
+**Founder LinkedIn:** https://www.linkedin.com/in/jaskaran-singh-a8a4292b1
 
 ---
 
@@ -17,6 +23,8 @@ Dexterous Crypto (DXT) is a digital token deployed on BNB Smart Chain. It uses t
 The project currently provides a publicly verifiable token contract, an official website, and a DXT/WBNB liquidity pool on PancakeSwap.
 
 DXT is an early-stage project. Its current functionality includes token ownership, transfers, and decentralized exchange trading.
+
+Dexterous Crypto was founded by Jaskaran Singh and is currently operated as a founder-led project.
 
 ## 2. Project Purpose
 
@@ -43,7 +51,7 @@ DXT does not currently provide ownership in a company, a claim on project revenu
 
 `0x075205868FA68F2308Ca86F6E7eE0A6a56442686`
 
-BscScan:
+**BscScan:**
 
 https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686
 
@@ -91,7 +99,7 @@ Users who choose to interact with DXT can connect a compatible wallet to BNB Sma
 
 Before confirming a transaction, users should verify the official contract address and review the token amount, exchange rate, price impact, slippage, network fees, and transaction details.
 
-Official PancakeSwap trading link:
+**Official PancakeSwap Trading Link:**
 
 https://pancakeswap.finance/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x075205868FA68F2308Ca86F6E7eE0A6a56442686
 
@@ -107,30 +115,69 @@ Users may need to import DXT manually using the official contract address if it 
 - DXT/WBNB liquidity pool created on PancakeSwap.
 - Buying and selling through the liquidity pool tested.
 - Official website and X account established.
+- Project founder publicly identified on the official website.
+- Founder LinkedIn profile provided for professional transparency.
+- Project whitepaper publicly available on GitHub.
 
 ### Potential Future Development
 
 The project may develop additional documentation, public communication channels, token information resources, and community feedback processes.
 
+Potential development priorities include improving public documentation, maintaining consistent project information across official platforms, and strengthening community communications.
+
 No dates, additional token utility, exchange listings, partnerships, or future products are guaranteed or committed through this whitepaper.
 
 Any future plans will be communicated through the project's official channels as they become sufficiently defined.
 
-## 9. Official Project Channels
+## 9. Founder, Team and Official Project Channels
 
-Website:
+### Founder and Leadership
+
+**Founder & CEO:** Jaskaran Singh
+
+Dexterous Crypto (DXT) was founded by Jaskaran Singh.
+
+He oversees the project's development, website, branding, and official communications.
+
+Dexterous Crypto is currently a founder-led project. Additional team members will be publicly identified if they formally join the project.
+
+### Founder Professional Profile
+
+**Name:** Jaskaran Singh
+
+**Role:** Founder & CEO — Dexterous Crypto (DXT)
+
+**LinkedIn:**
+
+https://www.linkedin.com/in/jaskaran-singh-a8a4292b1
+
+### Official Project Channels
+
+**Website:**
 
 https://dexterouscrypto.com
 
-Official X:
+**Official X:**
 
 https://x.com/OfficialDXT
 
-Email:
+**Official Email:**
 
 contact@dexterouscrypto.com
 
-The project currently publishes information under the Dexterous Crypto name. This whitepaper does not identify individual founders or team members.
+**GitHub Repository:**
+
+https://github.com/jaskaransidhu972-code/dexterouscrypto
+
+**Whitepaper:**
+
+https://github.com/jaskaransidhu972-code/dexterouscrypto/blob/main/whitepaper.md
+
+**Official Token Contract:**
+
+https://bscscan.com/token/0x075205868FA68F2308Ca86F6E7eE0A6a56442686
+
+The project communicates through its official channels. Users should verify links and contract information before interacting with DXT.
 
 ## 10. Risks and Limitations
 
@@ -144,10 +191,16 @@ Its continued development, adoption, trading availability, and future value are 
 
 There are no guaranteed profits, investment returns, price targets, or assurances of future exchange listings.
 
+Source-code verification on BscScan does not constitute an independent smart-contract security audit.
+
 Users are responsible for their own research and for understanding applicable legal, tax, and regulatory requirements before interacting with DXT.
 
 ---
 
-**End of Whitepaper — Version 0.1**
+**End of Whitepaper — Version 0.2**
 
-Official website: https://dexterouscrypto.com
+**Official Website:** https://dexterouscrypto.com
+
+**Founder & CEO:** Jaskaran Singh
+
+**Contact:** contact@dexterouscrypto.com
